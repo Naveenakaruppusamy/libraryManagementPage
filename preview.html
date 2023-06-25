@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./Css-File/searchengine.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <h1>Cart</h1>
+                <div class="listCard">
+                </div>
+                <div class="checkOut">
+                    <div class="">NoItems:<span class="total">0</span></div>
+                    <div class="closeShopping">CheckOut Items</div>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="sidehead">
+                    <div class="dots">
+                        <div>
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-solid fa-circle" style="color: #333;"></i>
+                            <i class="fa-solid fa-circle"></i>    
+                        </div>
+                        <h3>Search Content</h3>
+                    </div>
+                    <hr style="margin: 15px 0; border: 1px solid #eee;">
+                </div>
+                <div class="sidebody" style="height: 69vh;">
+                    <div class="searchbar">
+                        <input placeholder="Search..." id="searchBar" name="searchBar" type="text" >
+                        <i class="fa-solid fa-magnifying-glass glass" onclick="Searcher()"></i>
+                    </div>
+                    <div class="searchsorter">
+                        <div class="divS"><input type="radio" name="SearchType" id="searchTerm" value=""><label for="searchTerm">General Search</label></div>
+                        <div class="divS"><input type="radio" name="SearchType" id="Author" value="inauthor:"><label for="Author">Author</label></div>
+                        <div class="divS"><input type="radio" name="SearchType" id="Title" value="intitle:"><label for="Title">Title</label></div>
+                        <div class="divS"><input type="radio" name="SearchType" id="Subject" value="subject:"><label for="Subject">Subject</label></div>
+                    </div>
+                    <div>
+                        <button class="cartbtn">Go to Cart</button>
+                    </div>
+                </div>
+                <div class="sidefoot">
+                    <hr style="margin: 15px 0; border: 1px solid #eee;">
+                    <div class="social-icons">
+                        <a href="https://facebook.com" class="linkF"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://youtube.com" class="linkY"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://github.com" class="linkG"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="data">
+                <div class="top">
+                    <p>OpenBook Source</p>
+                    <p>Welcome</p>
+                    <a href="index.html"><button id="outbtn">LogOut</button></a>
+                </div>
+                <div class="header">
+                    <p>READ BOOKS ONLINE</p>
+                </div>
+                <div class="body">
+                    <div id="root"></div>
+                </div>
+            </div>
+        </div>
+        <script src="./Js/searchengine.js"></script>
+    </body>
+</html>
